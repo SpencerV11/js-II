@@ -4,7 +4,10 @@
 
 Resolution: 
 Expression: 
-Declaration: 
+Declaration:
+Dry: dont repeat yourself
+
+
 
 ## datatypes
     Reality
@@ -15,6 +18,10 @@ undefined
 string
 object
 array
+
+##Pattern
+methods: putting on function in an object.
+callback: pass a function, into a function.
 
 ## not data types
     These dont exist

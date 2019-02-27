@@ -1,22 +1,37 @@
 // *** CALLBACKS *** //
 
 // What datatypes can we pass into a function?
-function logger(parameter) {
-  console.log(parameter);
-  console.log(typeof parameter);
+
+function example(callBack, name) {
+  console.log(callBack(name));
+}
+function helloMachine(name){
+  return `Hello ${name}`
 }
 
-var str = 'Beth';
-var num = 2;
-var bool = true;
-var obj = {
-  name: 'Joe'
-}
-function func() {
-  console.log('I am a function')
+  example(helloMachine, "Bip")
+
+function doubler(num){
+  return num * 2
 }
 
-// logger();
+let nums = [1, 2, 3, 4, 5]
+
+function modifier(cb, array) {
+  for(let i = 0; i < array.length; i++){
+    array[i] = cb(array[i])
+  }
+  return array
+}
+
+console.log(modifier(doubler, nums))
+
+function allPeopleAreBob(){
+  return "Bob Ross"
+}
+
+let names = ["Todd", "Tiny Tim", "Helga", "Josh"]
+
 
 
 // What is a callback?
